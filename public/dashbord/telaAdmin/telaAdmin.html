@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <div class="sidebar" id="sidebar" onclick="ajustarConteudo()">
+    <div class="sidebar" id="sidebar">
         <div class="toggle-btn" id="sidebarToggle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  onclick="ajustarConteudo()">
                 <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
@@ -135,9 +135,74 @@
 
     <aside class="container-conteudo" id="container_conteudo">
         <div class="container-indicadores">
-            <section class="">
-                <img src="./imagens/funcionarios.png">
-                <p>Funcionários</p>
+            <section class="indicador vendas">
+                <aside class="caixa-icone-indicador">
+                    <img src="./imagens/vendas.png" class="icone-indicador">
+                </aside>
+                <aside class="caixa-texto-indicador texto-vendas">
+                    <h3 class="quantidade-funcionarios">12 Funcionários</h3>
+                    <p class="setor">Vendas</p>
+                </aside>
+            </section>
+            <section class="indicador marketing">
+                <aside class="caixa-icone-indicador">
+                    <img src="./imagens/marketing.png" class="icone-indicador">
+                </aside>
+                <aside class="caixa-texto-indicador texto-marketing">
+                    <h3 class="quantidade-funcionarios">8 Funcionários</h3>
+                    <p class="setor">Marketing</p>
+                </aside>   
+            </section>
+            <section class="indicador macroGerencia">
+                <aside class="caixa-icone-indicador">
+                    <img src="./imagens/macroGerencia.png" class="icone-indicador">
+                </aside>
+                <aside class="caixa-texto-indicador texto-macroGerencia">
+                    <h3 class="quantidade-funcionarios">3 Funcionários</h3>
+                    <p class="setor">Macro/Gerencia</p>
+                </aside>
+            </section>
+            <section class="indicador adicionar">
+                <img src="./imagens/adicionar.png" class="icone-indicador-adicionar">
+            </section>
+        </div>
+        <div class="container-barra-pesquisa">
+            <input type="text" placeholder="Buscar Funcionário" class="barra-pesquisa">
+            <button class="botao-buscar">Buscar</button>
+        </div>
+        <div class="lista-funcionarios">
+            <section class="container-funcionario">
+                <div class="caixa-nome-funcionario">
+                    <img src="./imagens/pessoa.png">
+                    <p class="nome-funcionario">Isabelly Favaro</p>
+                    <img src="./imagens/seloVendas.png">
+                </div>
+                <div class="caixa-alterar-funcionario">
+                    <img src="./imagens/edit.png" class="botao-icone">
+                    <img src="./imagens/delete.png" class="botao-icone">
+                </div>
+            </section>
+            <section class="container-funcionario">
+                <div class="caixa-nome-funcionario">
+                    <img src="./imagens/pessoa.png">
+                    <p class="nome-funcionario">Isabelly Favaro</p>
+                    <img src="./imagens/seloMarketing.png">
+                </div>
+                <div class="caixa-alterar-funcionario">
+                    <img src="./imagens/edit.png" class="botao-icone">
+                    <img src="./imagens/delete.png" class="botao-icone">
+                </div>
+            </section>
+            <section class="container-funcionario">
+                <div class="caixa-nome-funcionario">
+                    <img src="./imagens/pessoa.png">
+                    <p class="nome-funcionario">Isabelly Favaro</p>
+                    <img src="./imagens/seloMacro.png">
+                </div>
+                <div class="caixa-alterar-funcionario">
+                    <img src="./imagens/edit.png" class="botao-icone">
+                    <img src="./imagens/delete.png" class="botao-icone">
+                </div>
             </section>
         </div>
     </aside>

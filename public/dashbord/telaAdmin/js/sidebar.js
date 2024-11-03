@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function ajustarConteudo(){
-    if(container_conteudo.style.width == '96%'){
-        container_conteudo.style.width = '85%';
-    } else {
+    if(container_conteudo.style.width == '85%'){
         container_conteudo.style.width = '96%';
+    } else {
+        container_conteudo.style.width = '85%';
     }
      
 }
