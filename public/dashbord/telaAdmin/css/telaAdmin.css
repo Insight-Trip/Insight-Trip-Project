@@ -1,0 +1,15 @@
+.container-conteudo{
+    /*Tamanho*/
+    width: 96%;
+    height: 100%;
+    /*Borda*/
+    border: 2px solid black;
+}
+
+.container-indicadores{
+    /*Tamanho*/
+    width: 100%;
+    height: 20%;
+    /*Borda*/
+    border: 2px solid green;
+}
