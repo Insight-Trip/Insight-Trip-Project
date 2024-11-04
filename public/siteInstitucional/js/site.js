@@ -53,7 +53,7 @@ function inicializarTrocaDeImagens(tempoTroca) {
 
     const imageCover = document.getElementById('imageCover');
     const textCover = document.querySelector('#insghtTrip-TextCover');
-    const listaImagens = ["imagens/insightTrip.svg", "imagens/imagemIndexPraia.png", "imagens/imagemIndexMontanha.png"]
+    const listaImagens = ["siteInstitucional/imagens/insightTrip.svg", "siteInstitucional/imagens/imagemIndexPraia.png", "siteInstitucional/imagens/imagemIndexMontanha.png"]
     const navbar = document.querySelector('.navbar');
     const backgroundCover = document.querySelector('.background-cover');
     const areaNavbar = document.querySelector('.area-navbar.shadow')
@@ -83,7 +83,7 @@ function inicializarTrocaDeImagens(tempoTroca) {
                 backgroundCover.classList.remove('third');
                 areaNavbar.classList.remove('third')
                 try{
-                    imgLogo.src = "imagens/logo/imagemLogoCidade.png"
+                    imgLogo.src = "siteInstitucional/imagens/logo/imagemLogoCidade.png"
                 }
                 catch{
                     console.log("Erro ao mudar imagem");
@@ -97,7 +97,7 @@ function inicializarTrocaDeImagens(tempoTroca) {
                 navbar.classList.add('second');
                 areaNavbar.classList.add('second');
                 try{
-                    imgLogo.src = "imagens/logo/imagemLogoMontanha.png"
+                    imgLogo.src = "siteInstitucional/imagens/logo/imagemLogoMontanha.png"
                 }
                 catch{
                     console.log("Erro ao mudar imagem")
@@ -121,7 +121,7 @@ function inicializarTrocaDeImagens(tempoTroca) {
                 backgroundCover.classList.add('third');
 
                 try{
-                    imgLogo.src = "imagens/logo/imagemLogoNeve.png"
+                    imgLogo.src = "siteInstitucional/imagens/logo/imagemLogoNeve.png"
                 }
                 catch{
                     console.log("Erro ao mudar imagem")
