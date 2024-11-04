@@ -8,8 +8,8 @@ new Chart(cidadesVisitadas, {
             label: "Cidades",
             data: [80, 50, 30, 59, 27],
             borderWidth: 1,
-            backgroundColor: ['#d6e6ef'],
-            borderColor: ['#98b5c7']
+            backgroundColor: ['#8BE4F0'],
+            borderColor: ['#0085EA']
         }]
     },
     options: {
@@ -76,7 +76,7 @@ new Chart(cidadesSeguras, {
             label: "Eventos",
             data: [80, 95, 74],
             backgroundColor: ['#b2e2ca'],
-            borderColor: ['#87c6a7'],
+            borderColor: ['#0B4900'],
             borderWidth: 1,
             barThickness: 20
         }]
@@ -140,7 +140,7 @@ new Chart(cidadesPerigosas, {
             label: "Cidades",
             data: [12, 19, 3],
             backgroundColor: ['#d0c7ff'],
-            borderColor: ['#a49ad3'],
+            borderColor: ['#7E3FE1'],
             borderWidth: 1,
             barThickness: 20
         }]
@@ -205,14 +205,14 @@ new Chart(segurasVisitadas, {
                 label: 'Mais Visitadas',
                 data: [82, 59, 30],
                 backgroundColor: ['#d0c7ff'],
-                borderColor: ['#a49ad3'],
+                borderColor: ['#7E3FE1'],
                 borderWidth: 1
             },
             {
                 label: 'Mais Seguras',
                 data: [52, 39, 20],
                 backgroundColor: ['#b2e2ca'],
-                borderColor: ['#87c6a7'],
+                borderColor: ['#0B4900'],
                 borderWidth: 1
             }
         ]
@@ -277,8 +277,8 @@ new Chart(proximosEventos, {
             label: 'Próximos Eventos Globais',
             data: [20, 15, 30, 80, 95],
             borderWidth: 2,
-            backgroundColor: 'rgba(255, 165, 0, 0.2)',
-            borderColor: ['#fccfa5'],
+            backgroundColor: ['#EB9191'],
+            borderColor: ['#EB1E1A'],
             fill: true
         }]
     },
@@ -341,16 +341,16 @@ new Chart(estacao, {
             label: 'Viagens por Estação do Ano',
             data: [10, 50, 10, 30],
             backgroundColor: [
-                'rgba(255, 182, 193, 0.6)',
-                'rgba(173, 216, 230, 0.6)',
-                'rgba(255, 239, 186, 0.6)',
-                'rgba(196, 223, 155, 0.6)'
+                '#EB9191',
+                '#8BE4F0',
+                '#EBE591',
+                '#b2e2ca'
             ],
             borderColor: [
-                'rgba(255, 182, 193, 1)',
-                'rgba(173, 216, 230, 1)',
-                'rgba(255, 239, 186, 1)',
-                'rgba(196, 223, 155, 1)'
+                '#EB1E1A',
+                '#0085EA',
+                '#EBC201',
+                '#0B4900'
             ],
             borderWidth: 1
         }]

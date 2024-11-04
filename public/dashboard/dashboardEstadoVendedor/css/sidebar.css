@@ -107,6 +107,7 @@ body {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .folder:hover {
@@ -118,15 +119,15 @@ body {
 }
 
 .folder:nth-child(2) {
-    background-color: #d0c7ff;
+    background-color: #7E3FE1;
 }
 
 .folder:nth-child(3) {
-    background-color: #fccfa5;
+    background-color: #FFA75E;
 }
 
 .folder:nth-child(4) {
-    background-color: #98b5c7;
+    background-color: #3E9CE0;
 }
 
 .folder:nth-child(5) {
@@ -134,15 +135,15 @@ body {
 }
 
 .folder:nth-child(6) {
-    background-color: #d0c7ff;
+    background-color: #7E3FE1;
 }
 
 .folder:nth-child(7) {
-    background-color: #fccfa5;
+    background-color: #FFA75E;
 }
 
 .folder:nth-child(8) {
-    background-color: #98b5c7;
+    background-color: #3E9CE0;
 }
 
 .folder:nth-child(9) {
@@ -150,15 +151,15 @@ body {
 }
 
 .folder:nth-child(10) {
-    background-color: #d0c7ff;
+    background-color: #7E3FE1;
 }
 
 .folder:nth-child(11) {
-    background-color: #fccfa5;
+    background-color: #FFA75E;
 }
 
 .folder:nth-child(12) {
-    background-color: #98b5c7;
+    background-color: #3E9CE0;
 }
 
 .folder.selected {
@@ -192,7 +193,6 @@ body {
     font-weight: 400;
     font-size: 65px;
     color: #FFFFFF;
-    /*width: 80%;*/
     margin-left: 250px;
     margin-top: 25px;
     cursor: pointer;

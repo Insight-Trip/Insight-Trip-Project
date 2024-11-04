@@ -8,8 +8,8 @@ new Chart(cidadesVisitadas, {
             label: 'Cidades Mais Visitadas (Janeiro a Junho)',
             data: [80, 50, 30, 59, 27],
             borderWidth: 1,
-            backgroundColor: ['#c2e0eb'],
-            borderColor: ['#7f9db5'],
+            backgroundColor: ['#8BE4F0'],
+            borderColor: ['#0085EA']
         }]
     },
     options: {
@@ -62,8 +62,8 @@ new Chart(cidadesSeguras, {
         datasets: [{
             label: 'Cidades Mais Seguras',
             data: [80, 95, 74],
-            backgroundColor: ['#85d1b1'],
-            borderColor: ['#6da688'],
+            backgroundColor: ['#b2e2ca'],
+            borderColor: ['#0B4900'],
             borderWidth: 1,
             barThickness: 20
         }]
@@ -114,8 +114,8 @@ new Chart(cidadesPerigosas, {
         datasets: [{
             label: 'Cidades Mais Perigosas',
             data: [12, 19, 3],
-            backgroundColor: ['#a68cff'],
-            borderColor: ['#8b6ab2'],
+            backgroundColor: ['#d0c7ff'],
+            borderColor: ['#7E3FE1'],
             borderWidth: 1,
             barThickness: 20
         }]
@@ -167,15 +167,15 @@ new Chart(segurasVisitadas, {
             {
                 label: 'Mais Visitadas',
                 data: [82, 59, 30],
-                backgroundColor: ['#a68cff'],
-                borderColor: ['#8b6ab2'],
+                backgroundColor: ['#d0c7ff'],
+                borderColor: ['#7E3FE1'],
                 borderWidth: 1
             },
             {
                 label: 'Mais Seguras',
                 data: [52, 39, 20],  
-                backgroundColor: ['#85d1b1'],
-                borderColor: ['#6da688'],
+                backgroundColor: ['#b2e2ca'],
+                borderColor: ['#0B4900'],
                 borderWidth: 1
             }
         ]
@@ -227,8 +227,8 @@ new Chart(proximosEventos, {
             label: 'Próximos eventos',
             data: [20, 15, 30, 80, 95],
             borderWidth: 2,
-            backgroundColor: 'rgba(255, 165, 0, 0.2)',
-            borderColor: ['#fccfa5'],
+            backgroundColor: ['#EB9191'],
+            borderColor: ['#EB1E1A'],
             fill: true
         }]
     },
@@ -278,16 +278,16 @@ new Chart(estacao, {
             label: 'Viagens por Estação do Ano',
             data: [10, 50, 10, 30],
             backgroundColor: [
-                'rgba(255, 105, 180, 0.8)',
-                'rgba(135, 206, 250, 0.8)',
-                'rgba(255, 221, 51, 0.8)', 
-                'rgba(150, 223, 50, 0.8)'
+                '#EB9191',
+                '#8BE4F0',
+                '#EBE591',
+                '#b2e2ca'
             ],
             borderColor: [
-                'rgba(255, 105, 180, 1)',
-                'rgba(135, 206, 250, 1)',
-                'rgba(255, 221, 51, 1)',
-                'rgba(150, 223, 50, 1)'
+                '#EB1E1A',
+                '#0085EA',
+                '#EBC201',
+                '#0B4900'
             ],
             borderWidth: 1
         }]

@@ -17,7 +17,7 @@ new Chart(EstadosDestaque, {
                 label: 'Taxa de Segurança',
                 data: [20, 15, 20, 30, 70, 65, 40, 60],
                 backgroundColor: ['#b2e2ca'],
-                borderColor: ['#87c6a7'],
+                borderColor: ['#0B4900'],
                 borderWidth: 1
             }
         ]
@@ -82,8 +82,8 @@ new Chart(cidadesSeguras, {
             label: 'Maior Tendência Estrangeira',
             data: [80, 50, 30, 59, 27],
             borderWidth: 1,
-            backgroundColor: ['rgba(173, 216, 230, 0.6)'],
-            borderColor: ['#3E9CE0']
+            backgroundColor: ['#8BE4F0'],
+            borderColor: ['#0085EA']
         }]
     },
     options: {
@@ -149,16 +149,16 @@ new Chart(estacao, {
             label: 'Viagens por Estação do Ano',
             data: [10, 50, 10, 30],
             backgroundColor: [
-                'rgba(255, 182, 193, 0.6)',
-                'rgba(173, 216, 230, 0.6)',
-                'rgba(255, 239, 186, 0.6)',
-                'rgba(196, 223, 155, 0.6)'
+                '#EB9191',
+                '#8BE4F0',
+                '#EBE591',
+                '#b2e2ca'
             ],
             borderColor: [
-                'rgba(255, 182, 193, 1)',
-                'rgba(173, 216, 230, 1)',
-                'rgba(255, 239, 186, 1)',
-                'rgba(196, 223, 155, 1)'
+                '#EB1E1A',
+                '#0085EA',
+                '#EBC201',
+                '#0B4900'
             ],
             borderWidth: 1
         }]
