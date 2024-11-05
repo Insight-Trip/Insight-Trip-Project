@@ -150,18 +150,18 @@
 }
 
 .card-resume.events {
-    /* color: (--dark-blue-elements);
-    border-color: (--blue-primary-bigFont); */
+    color: var(--dark-blue-elements);
+    border-color: var(--blue-primary-bigFont);
 }
 
 .card-resume.main {
-    /* color: (--dark-purple-elements);
-    border-color: (--purple-primary-bigFont); */
+    color: var(--dark-purple-elements);
+    border-color: var(--purple-primary-bigFont);
 }
 
 .card-resume.demand {
-    /* color: (--orange-primary);
-    border-color: (--orange-primary); */
+    color: var(--orange-primary);
+    border-color: var(--orange-primary);
 }
 
 .card-resume .area-icon-card {

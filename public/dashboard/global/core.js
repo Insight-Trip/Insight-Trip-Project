@@ -25,7 +25,7 @@ function switchTheme(e) {
 
 // Função para mudar o tema a partir do console
 window.changeTheme = function (themeName) {
-    const validThemes = ['light', 'dark', 'frio', 'sao-paulo', 'amazonas', 'tropical', 'profissional']; // Temas válidos
+    const validThemes = ['light', 'dark', 'frio', 'sao-paulo', 'amazonas', 'tropical', 'profissional', 'github', 'notion', 'youtube', 'daltonico']; // Temas válidos
 
     if (validThemes.includes(themeName)) {
         localStorage.setItem('theme', themeName); // Armazena a escolha no localStorage
