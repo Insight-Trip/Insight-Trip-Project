@@ -193,9 +193,40 @@
     function brasilFederacao() {
         MapaBrasil(document.getElementById('mapa'), {
             unidadeData: [
-                { codIbge: 52, fillColor: '#d82b40' },
-                { codIbge: 43, fillColor: '#d82b40' },
-                { codIbge: 11, fillColor: '#ffa700', strokeColor: '#008744', strokeWidth: 4 },
+                // Alta demanda - Vermelho escuro
+                { codIbge: 29, fillColor: '#d82b40' }, 
+                { codIbge: 33, fillColor: '#d82b40' },   
+                { codIbge: 26, fillColor: '#d82b40' }, 
+                
+                // Média-alta demanda - Vermelho médio
+                { codIbge: 35, fillColor: '#e84d5b' }, 
+                { codIbge: 31, fillColor: '#e84d5b' }, 
+                { codIbge: 43, fillColor: '#e84d5b' }, 
+                
+                // Média demanda - Vermelho claro
+                { codIbge: 42, fillColor: '#f47680' }, 
+                { codIbge: 41, fillColor: '#f47680' }, 
+                { codIbge: 32, fillColor: '#f47680' }, 
+                { codIbge: 53, fillColor: '#f47680' }, 
+                
+                // Baixa demanda - Rosa claro
+                { codIbge: 50, fillColor: '#ffa3a3' }, 
+                { codIbge: 51, fillColor: '#ffa3a3' }, 
+                { codIbge: 52, fillColor: '#ffa3a3' }, 
+                { codIbge: 13, fillColor: '#ffa3a3' }, 
+                { codIbge: 15, fillColor: '#ffa3a3' }, 
+                { codIbge: 21, fillColor: '#ffa3a3' }, 
+                { codIbge: 22, fillColor: '#ffa3a3' }, 
+                { codIbge: 23, fillColor: '#ffa3a3' }, 
+                { codIbge: 24, fillColor: '#ffa3a3' }, 
+                { codIbge: 25, fillColor: '#ffa3a3' }, 
+                { codIbge: 27, fillColor: '#ffa3a3' }, 
+                { codIbge: 28, fillColor: '#ffa3a3' }, 
+                { codIbge: 11, fillColor: '#ffa3a3' }, 
+                { codIbge: 12, fillColor: '#ffa3a3' }, 
+                { codIbge: 14, fillColor: '#ffa3a3' }, 
+                { codIbge: 16, fillColor: '#ffa3a3' }, 
+                { codIbge: 17, fillColor: '#ffa3a3' }, 
             ],
             onClick: function (data) { console.log(data) }
         });
