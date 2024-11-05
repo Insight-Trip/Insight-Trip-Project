@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
     const sidebar = document.getElementById('sidebar');
-    const sidebarToggle = document.getElementById('sidebarToggle');
+    // const sidebarToggle = document.getElementById('sidebarToggle');
     const menuSidebar = document.querySelector('.menu-sidebar');
     const navCards = document.querySelectorAll('.card-navbar');
 
     // Função para alternar o estado da sidebar
-    function toggleSidebar() {
-        sidebar.classList.toggle('retracted');
-    }
+    // function toggleSidebar() {
+    //     sidebar.classList.toggle('retracted');
+    // }
 
-    // Event listener para o botão de toggle
-    sidebarToggle.addEventListener('click', toggleSidebar);
+    // // Event listener para o botão de toggle
+    // sidebarToggle.addEventListener('click', toggleSidebar);
 
     // Código existente para os cards da navbar
     navCards.forEach(card => {
@@ -29,5 +29,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Iniciar com a sidebar retraída
-    sidebar.classList.add('retracted');
+    // sidebar.classList.add('retracted');
 });

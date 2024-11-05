@@ -5,7 +5,7 @@
 }
 
 .filter-field {
-    font-family: var(--principal);
+    /* font-family: var(--principal); */
     color: #FFA75E;
     margin-top: 10px;
     margin-left: 10px;

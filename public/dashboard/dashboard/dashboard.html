@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/flux.css">
     <link rel="stylesheet" href="css/charts.css">
     <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/mapin.css">
+    <link rel="stylesheet" href="../global/mapin.css">
+    <link rel="stylesheet" href="../global/sidebar/sidebar.css">
 </head>
 
 <body>
@@ -112,6 +112,11 @@
                 <!-- Abaixo a estutura svg apra o icone do buscar destinos -->
                 <p>Buscar destinos</p>
             </div>
+
+            <label id="theme-switch">
+                <input type="checkbox">
+                Alternar tema
+            </label>
         </div>
     
         <!-- <label id="theme-switch">
@@ -357,10 +362,12 @@
 
     </div>
 
+    <script src="../global/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/charts.js"></script>
-    <script src="js/sidebar.js"></script>
+    <script src="../global/sidebar/sidebar.js"></script>
     <script src="js/dom.js"></script>
+   
 
 
 </body>

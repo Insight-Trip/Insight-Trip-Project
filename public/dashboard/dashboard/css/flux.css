@@ -14,13 +14,13 @@ body {
 
     width: 225px;
 
-    background-color: #f7f7f7;
+    background-color: var(--sidebar-bg);
 
     padding: 20px;
 
     height: 93vh;
 
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0 5px var(--shadow-light);
 
     display: flex;
 
@@ -56,7 +56,7 @@ body {
 
     text-decoration: none;
 
-    color: #333;
+    color: var(--color-principal-text);
 
     font-size: 18px;
 
@@ -72,7 +72,7 @@ body {
 
 .nav-links a:hover {
 
-    background-color: #e0e0e0;
+    background-color: var(--hover-light);
 
     border-radius: 8px;
 
@@ -92,7 +92,7 @@ body {
 
 .weather-card {
 
-    background-color: #ffffff;
+    background-color: var(--background-interface);
 
     border-radius: 10px;
 
@@ -100,7 +100,7 @@ body {
 
     text-align: center;
 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow-medium);
 
     width: 85%;
 
@@ -114,7 +114,7 @@ body {
 
     font-size: 15px;
 
-    color: #666;
+    color: var(--text-secondary);
 
 }
 
@@ -126,7 +126,7 @@ body {
 
     font-weight: bold;
 
-    color: #2C3E50;
+    color: var(--dark-blue);
 
     font-family: 'Bebas Neue', sans-serif;
 
@@ -136,7 +136,7 @@ body {
 
 .weather-card .button {
 
-    background-color: #f2f2f2;
+    background-color: var(--blue-white-elements);
 
     border: none;
 
@@ -158,7 +158,7 @@ body {
 
 .weather-card .button:hover {
 
-    background-color: #e0e0e0;
+    background-color: var(--hover-light);
 
 }
 
@@ -182,7 +182,7 @@ body {
 
     align-items: center;
 
-    background-color: #d6e6ef;
+    background-color: var(--background-mapa);
 
     flex-wrap: wrap;
 
@@ -200,9 +200,9 @@ body {
 
 .folder {
 
-    background-color: #d0c7ff;
+    background-color: var(--purple-elements);
 
-    color: #ffffff;
+    color: var(--background-interface);
 
     font-size: 16px;
 
@@ -210,7 +210,7 @@ body {
 
     border-radius: 10px 10px 0 0;
 
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 4px var(--shadow-light);
 
     transition: background-color 0.3s;
 
@@ -224,7 +224,7 @@ body {
 
 .folder:hover {
 
-    background-color: #f2f2f2;
+    background-color: var(--hover-light);
 
 }
 
@@ -232,7 +232,7 @@ body {
 
 .folder:nth-child(1) {
 
-    background-color: #87c6a7;
+    background-color: var(--blue-primary);
 
 }
 
@@ -240,7 +240,7 @@ body {
 
 .folder:nth-child(2) {
 
-    background-color: #7E3FE1;
+    background-color: var(--purple-elements);
 
 }
 
@@ -248,7 +248,7 @@ body {
 
 .folder:nth-child(3) {
 
-    background-color: #FFA75E;
+    background-color: var(--orange-primary);
 
 }
 
@@ -256,7 +256,7 @@ body {
 
 .folder:nth-child(4) {
 
-    background-color: #3E9CE0;
+    background-color: var(--dark-blue-elements);
 
 }
 
@@ -264,7 +264,7 @@ body {
 
 .folder:nth-child(5) {
 
-    background-color: #87c6a7;
+    background-color: var(--blue-primary);
 
 }
 
@@ -272,7 +272,7 @@ body {
 
 .folder:nth-child(6) {
 
-    background-color: #7E3FE1;
+    background-color: var(--purple-elements);
 
 }
 
@@ -280,7 +280,7 @@ body {
 
 .folder:nth-child(7) {
 
-    background-color: #FFA75E;
+    background-color: var(--orange-primary);
 
 }
 
@@ -288,7 +288,7 @@ body {
 
 .folder:nth-child(8) {
 
-    background-color: #3E9CE0;
+    background-color: var(--dark-blue-elements);
 
 }
 
@@ -296,7 +296,7 @@ body {
 
 .folder:nth-child(9) {
 
-    background-color: #87c6a7;
+    background-color: var(--blue-primary);
 
 }
 
@@ -304,7 +304,7 @@ body {
 
 .folder:nth-child(10) {
 
-    background-color: #7E3FE1;
+    background-color: var(--purple-elements);
 
 }
 
@@ -312,7 +312,7 @@ body {
 
 .folder:nth-child(11) {
 
-    background-color: #FFA75E;
+    background-color: var(--orange-primary);
 
 }
 
@@ -320,7 +320,7 @@ body {
 
 .folder:nth-child(12) {
 
-    background-color: #3E9CE0;
+    background-color: var(--dark-blue-elements);
 
 }
 
@@ -328,9 +328,9 @@ body {
 
 .folder.selected {
 
-    background-color: #ffffff;
+    background-color: var(--background-interface);
 
-    color: #333;
+    color: var(--color-principal-text);
 
 }
 
@@ -346,7 +346,7 @@ body {
 
     flex-direction: column;
 
-    background-color: #d6e6ef;
+    background-color: var(--background-mapa);
 
     padding: 0px;
 
@@ -356,7 +356,7 @@ body {
 
 .mapa {
 
-    background-color: #d6e6ef;
+    background-color: var(--background-mapa);
 
     height: 200px;
 
@@ -384,7 +384,7 @@ body {
 
     transform: scale(1);
 
-    background-color: #d6e6ef;
+    background-color: var(--background-mapa);
 
 }
 
@@ -392,7 +392,8 @@ body {
 
 .mapa:hover {
 
-    color: aliceblue;
+    color: var(--blue-white-elements);
+
     height: 80vh;
 
     border: solid 1px var(--gray-elements);
@@ -405,7 +406,7 @@ body {
 
 .graficos {
 
-    background-color: #ffffff;
+    background-color: var(--background-interface);
 
     flex: 1;
 
@@ -423,7 +424,7 @@ body {
 
     font-size: 65px;
 
-    color: #FFFFFF;
+    color: var(--background-interface);
 
     margin-left: 250px;
 
