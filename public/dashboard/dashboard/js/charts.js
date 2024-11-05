@@ -3,7 +3,7 @@ const EstadosDestaque = document.getElementById('EstadosDestaque');
 new Chart(EstadosDestaque, {
     type: 'bar',
     data: {
-        label: 'Estados em Destaque (Janeiro a Junho)',
+        label: 'Estados em Destaque (Carnaval)',
         labels: ['São Paulo', 'Rio de Janeiro', 'Bahia', 'Santa Catarina', 'Rio Grande do Norte', 'Paraná', 'Minas Gerais', 'Amazonas'],
         datasets: [
             {
@@ -50,7 +50,7 @@ new Chart(EstadosDestaque, {
         plugins: {
             title: {
                 display: true,
-                text: 'Estados em Destaque (Janeiro a Junho)',
+                text: 'Estados em Destaque (Carnaval)',
                 position: 'top',
                 font: {
                     size: 14,

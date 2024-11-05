@@ -13,7 +13,7 @@
     border-radius: 12px;
     margin-left: 1180px;
     margin-top: -53px;
-    font-family: var(--blue-primary-bigFont);
+    /* font-family: (--blue-primary-bigFont); */
     font-size: 16px;
     border-style: none;
     background-color: #ffffff;
@@ -21,7 +21,7 @@
 }
 
 .filter-field {
-    font-family: var(--principal);
+    /* font-family: (--principal); */
     color: #FFA75E;
     margin-top: 10px;
     margin-left: 10px;
@@ -134,7 +134,7 @@
 }
 
 .card-resume {
-    font-family: var(--principal);
+    /* font-family: (--principal); */
     display: flex;
     align-items: center;
     padding: 12px;
@@ -150,18 +150,18 @@
 }
 
 .card-resume.events {
-    color: var(--dark-blue-elements);
-    border-color: var(--blue-primary-bigFont);
+    /* color: (--dark-blue-elements);
+    border-color: (--blue-primary-bigFont); */
 }
 
 .card-resume.main {
-    color: var(--dark-purple-elements);
-    border-color: var(--purple-primary-bigFont);
+    /* color: (--dark-purple-elements);
+    border-color: (--purple-primary-bigFont); */
 }
 
 .card-resume.demand {
-    color: var(--orange-primary);
-    border-color: var(--orange-primary);
+    /* color: (--orange-primary);
+    border-color: (--orange-primary); */
 }
 
 .card-resume .area-icon-card {
@@ -171,20 +171,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--blue-primary-bigFont);
+    /* background-color: (--blue-primary-bigFont); */
     margin: -25px;
 }
 
 .card-resume.events .area-icon-card {
-    background-color: var(--blue-primary-bigFont);
+    /* background-color: (--blue-primary-bigFont); */
 }
 
 .card-resume.main .area-icon-card {
-    background-color: var(--purple-primary-bigFont);
+    /* background-color: (--purple-primary-bigFont); */
 }
 
 .card-resume.demand .area-icon-card {
-    background-color: var(--orange-primary-bigFont);
+    /* background-color: (--orange-primary-bigFont); */
 }
 
 .area-filter,
@@ -204,22 +204,22 @@
     display: block;
     margin-bottom: 5px;
     font-size: 14px;
-    color: var(--color-principal-text);
+    color: (--color-principal-text);
 }
 
 .filter-field select {
     width: 100%; /* Expande a largura */
     padding: 8px;
-    border: 1px solid var(--gray-elements);
+    border: 1px solid (--gray-elements);
     border-radius: 5px;
-    background-color: var(--blue-white-elements);
-    color: var(--color-principal-text);
+    background-color: (--blue-white-elements);
+    color: (--color-principal-text);
     font-size: 14px;
 }
 
 .filter-field select:focus {
     outline: none;
-    border-color: var(--blue-primary);
+    border-color: (--blue-primary);
 }
 
 .filter-field:last-child {
