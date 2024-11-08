@@ -78,7 +78,40 @@ function cadastrar(req, res) {
     }
 }
 
+function listarFuncionarios(req,res){
+    usuarioModel.listarFuncionarios().then(
+        function (resultado) {
+            res.status(200).json(resultado)
+        }
+    ).catch(error => {
+        console.log(error.sqlMessage)
+        res.sendStatus(500).json(error.sqlMessage)
+    })
+}
+
+function buscarFuncionario(req, res){
+    const busca = req.body.busca
+
+    if(busca == undefined){
+        res.status(400).send("O termo de busca está indefinido!");
+        return;
+    }
+
+    usuarioModel.buscarFuncionario(busca)
+    .then(
+        function (resultado) {
+            res.status(200).json(resultado)
+        }
+    ).catch(error => {
+        console.log(error.sqlMessage);
+        res.status(500).json(error.sqlMessage);
+    })
+}
+
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    listarFuncionarios,
+    buscarFuncionario
 }

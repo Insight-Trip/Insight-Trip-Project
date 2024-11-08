@@ -22,7 +22,31 @@ function cadastrar(nome, email, senha, fkEmpresa) {
     return database.executar(instrucaoSql);
 }
 
+
+function listarFuncionarios() {
+    var instrucaoSql = `SELECT funcionario.nome, area.nome AS area, funcionario.email, funcionario.telefone 
+FROM funcionario 
+JOIN area ON funcionario.fkArea = area.idArea 
+`
+    console.log("Executando a instrução SQL: \n", instrucaoSql);
+
+    return database.executar(instrucaoSql);
+}
+
+function buscarFuncionario(char){
+    var instrucaoSql = `SELECT funcionario.nome, area.nome AS area, funcionario.email, funcionario.telefone 
+FROM funcionario 
+JOIN area ON funcionario.fkArea = area.idArea 
+WHERE funcionario.nome LIKE "%${char}%"`
+
+    console.log("Executando a isntrução SQL: \n", instrucaoSql)
+
+    return database.executar(instrucaoSql)
+}
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    listarFuncionarios,
+    buscarFuncionario
 };

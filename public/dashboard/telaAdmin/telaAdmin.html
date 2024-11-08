@@ -17,7 +17,8 @@
 <body>
     <div class="sidebar" id="sidebar">
         <div class="toggle-btn" id="sidebarToggle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  onclick="ajustarConteudo()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                onclick="ajustarConteudo()">
                 <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
@@ -25,7 +26,7 @@
         <div class="area-logo">
             <p class="logo-text">Insight Trip</p>
         </div>
-    
+
         <div class="menu-sidebar">
             <div class="card-navbar navbar-card-dashboard activate">
                 <!-- abaixo a estrutura svg para o icone da dashboard -->
@@ -151,7 +152,7 @@
                 <aside class="caixa-texto-indicador texto-marketing">
                     <h3 class="quantidade-funcionarios">8 Funcionários</h3>
                     <p class="setor">Marketing</p>
-                </aside>   
+                </aside>
             </section>
             <section class="indicador macroGerencia">
                 <aside class="caixa-icone-indicador">
@@ -167,45 +168,15 @@
             </section>
         </div>
         <div class="container-barra-pesquisa">
-            <input type="text" placeholder="Buscar Funcionário" class="barra-pesquisa">
-            <button class="botao-buscar">Buscar</button>
+            <input type="text" placeholder="Buscar Funcionário" id="input_busca" class="barra-pesquisa">
+            <button class="botao-buscar" id="button_buscar">Buscar</button>
         </div>
         <div class="lista-funcionarios">
-            <section class="container-funcionario">
-                <div class="caixa-nome-funcionario">
-                    <img src="./imagens/pessoa.png">
-                    <p class="nome-funcionario">Isabelly Favaro</p>
-                    <img src="./imagens/seloVendas.png">
-                </div>
-                <div class="caixa-alterar-funcionario">
-                    <img src="./imagens/edit.png" class="botao-icone">
-                    <img src="./imagens/delete.png" class="botao-icone">
-                </div>
-            </section>
-            <section class="container-funcionario">
-                <div class="caixa-nome-funcionario">
-                    <img src="./imagens/pessoa.png">
-                    <p class="nome-funcionario">Isabelly Favaro</p>
-                    <img src="./imagens/seloMarketing.png">
-                </div>
-                <div class="caixa-alterar-funcionario">
-                    <img src="./imagens/edit.png" class="botao-icone">
-                    <img src="./imagens/delete.png" class="botao-icone">
-                </div>
-            </section>
-            <section class="container-funcionario">
-                <div class="caixa-nome-funcionario">
-                    <img src="./imagens/pessoa.png">
-                    <p class="nome-funcionario">Isabelly Favaro</p>
-                    <img src="./imagens/seloMacro.png">
-                </div>
-                <div class="caixa-alterar-funcionario">
-                    <img src="./imagens/edit.png" class="botao-icone">
-                    <img src="./imagens/delete.png" class="botao-icone">
-                </div>
-            </section>
         </div>
     </aside>
 </body>
+
+<script src="js/telaAdmin.js"></script>
 <script src="./js/sidebar.js" defer></script>
+
 </html>

@@ -304,8 +304,11 @@
     /* Fundo preto para a interface principal */
     --blue-white-elements: #161b22;
     /* Preto para caixas e componentes */
+    
+
 
     /* Novas variáveis no tema GitHub */
+
     --sidebar-bg: #0d1117;
     /* Preto profundo para sidebar */
     --shadow-light: rgba(255, 255, 255, 0.1);
