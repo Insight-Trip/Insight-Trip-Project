@@ -20,11 +20,32 @@ document.addEventListener('DOMContentLoaded', function () {
             menuSidebar.className = 'menu-sidebar';
             const cardClass = this.classList[1].replace('navbar-card-', '');
             menuSidebar.classList.add(`select-${cardClass}`);
+            console.log(cardClass)
 
             // Se a sidebar estiver retraída, expanda-a ao clicar em um card
             if (sidebar.classList.contains('retracted')) {
                 toggleSidebar();
             }
+
+            // Redireciona para a página correspondente após a animação
+            setTimeout(() => {
+                switch (cardClass) {
+                    case 'funcionarios':
+                        window.location.href = '../telaAdmin/telaAdmin.html';
+                        break;
+                    case 'ia':
+                        window.location.href = '../../dummont/dummont.html';
+                        break;
+                    case 'config':
+                        window.location.href = '/pagina-configuracoes';
+                        break;
+                    case 'buscar-destinos':
+                        window.location.href = '../../telaProcura/telaProcura.html';
+                        break;
+                    default:
+                        console.log('Página não encontrada');
+                }
+            }, 300); // Aguarda 300ms para a animação completar
         });
     });
 

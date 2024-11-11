@@ -22,6 +22,7 @@ function autenticar(req, res) {
                             id: resultadoAutenticar[0].id,
                             email: resultadoAutenticar[0].email,
                             nome: resultadoAutenticar[0].nome,
+                            isAdm : resultadoAutenticar[0].fkAdministrador == null,
                             senha: resultadoAutenticar[0].senha,
                         });
                     } else if (resultadoAutenticar.length == 0) {
@@ -78,7 +79,7 @@ function cadastrar(req, res) {
     }
 }
 
-function listarFuncionarios(req,res){
+function listarFuncionarios(req, res){
     usuarioModel.listarFuncionarios().then(
         function (resultado) {
             res.status(200).json(resultado)
@@ -108,10 +109,22 @@ function buscarFuncionario(req, res){
     })
 }
 
+function listarAdministradores(req, res){
+    usuarioModel.listarAdministradores().then(
+        function (resultado) {
+            res.status(200).json(resultado)
+        }
+    ).catch(error => {
+        console.log(error.sqlMessage)
+        res.sendStatus(500).json(error.sqlMessage)
+    })
+}
+
 
 module.exports = {
     autenticar,
     cadastrar,
     listarFuncionarios,
-    buscarFuncionario
+    buscarFuncionario,
+    listarAdministradores
 }

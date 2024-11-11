@@ -18,6 +18,10 @@ router.get("/listar", function (req,res) {
 router.post("/buscar", function(req, res) {
     usuarioController.buscarFuncionario(req, res)
 })
+
+router.get("/listarAdm", function(req, res) {
+    usuarioController.listarAdministradores(req, res)
+})
      
 
 module.exports = router;

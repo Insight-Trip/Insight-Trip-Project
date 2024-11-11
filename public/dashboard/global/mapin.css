@@ -5,6 +5,7 @@
 /* Particularmente não gostei nenhum pouco desta fonte */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /*Está aqui é a fonte padrão do figma, desenvolvi as telas com ela, de qualquer forma, acho ela bonita*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     /* CORES */
@@ -450,6 +451,160 @@
     /* Cinza médio para textos secundários */
     --background-mapa: #e9eaea;
     /* Fundo claro para destacar áreas como mapas */
+}
+
+[data-theme="yana"] {
+    --blue-primary-bigFont: #424769;
+    /* Azul médio */
+    --blue-primary: #2d3250;
+    /* Azul escuro */
+    --blue-primary-hover: #676f9d;
+    /* Azul claro */
+    --orange-primary: #f9b17a;
+    /* Laranja */
+    --color-principal-text: #ffffff;
+    /* Branco */
+    --gray-elements: rgba(66, 71, 105, 0.2);
+    /* Azul médio com transparência */
+    --dark-blue: #2d3250;
+    /* Azul escuro */
+    --dark-blue-elements: #424769;
+    /* Azul médio */
+    --purple-primary-bigFont: rgba(66, 71, 105, 1);
+    /* Azul médio */
+    --dark-purple-elements: #2d3250;
+    /* Azul escuro */
+    --orange-primary-bigFont: rgba(249, 177, 122, 0.48);
+    /* Laranja com transparência */
+    --background-interface: #121212;
+    /* Preto para o fundo */
+    --blue-white-elements: #0A0F14;
+    /* Fundo escuro */
+
+    /* Novas variáveis no tema escuro */
+    --sidebar-bg: #1A1A1A;
+    /* Cor de fundo da sidebar */
+    --shadow-light: rgba(0, 0, 0, 0.2);
+    /* Sombra leve */
+    --shadow-medium: rgba(0, 0, 0, 0.25);
+    /* Sombra média */
+    --hover-light: #2A2A2A;
+    /* Cor para hover */
+    --text-secondary: #A0A0A0;
+    /* Cor de texto secundário */
+    --background-mapa: #2C3E50;
+    /* Fundo para o mapa */
+
+    /* FONTES */
+        --titulos: 'Bebas Neue', sans-serif;
+        --textos: 'Abel', sans-serif;
+        --principal: 'Relaway', sans-serif;
+}
+
+[data-theme="cactus"] {
+    /* CORES */
+    --blue-primary-bigFont: #4D774E;
+    /* Verde médio */
+    --blue-primary: #9DC88D;
+    /* Verde claro */
+    --blue-primary-hover: #164A41;
+    /* Verde escuro */
+    --orange-primary: #F1B24A;
+    /* Laranja */
+    --color-principal-text: #FFFFFF;
+    /* Branco */
+    --gray-elements: rgba(157, 200, 141, 0.2);
+    /* Verde claro com transparência */
+    --dark-blue: #164A41;
+    /* Verde escuro */
+    --dark-blue-elements: #4D774E;
+    /* Verde médio */
+    --purple-primary-bigFont: rgba(157, 200, 141, 1);
+    /* Verde claro */
+    --purple-elements: #9DC88D;
+    /* Verde claro */
+    --dark-purple-elements: #4D774E;
+    /* Verde médio */
+    --orange-primary-bigFont: rgba(241, 178, 74, 0.48);
+    /* Laranja com transparência */
+    --background-interface: #164A41;
+    /* Fundo verde escuro */
+    --blue-focus: #9DC88D;
+    /* Verde claro para foco */
+    --card-question-message: rgba(255, 255, 255, 0.9);
+    /* Fundo branco com leve transparência */
+    --gray-border: rgba(77, 119, 78, 0.5);
+    /* Verde médio com transparência */
+    --blue-white-elements: #FFFFFF;
+    /* Branco */
+
+    /* Novas variáveis necessárias */
+    --sidebar-bg: #4D774E;
+    /* Fundo da sidebar em verde médio */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+    --shadow-medium: rgba(0, 0, 0, 0.12);
+    /* Sombra média */
+    --hover-light: #9DC88D;
+    /* Cor de hover em verde claro */
+    --text-secondary: #A0A0A0;
+    /* Texto secundário em cinza claro */
+    --background-mapa: #9DC88D;;
+    /* Fundo do mapa em verde escuro */
+
+    --blue-white-elements: #4D774E;
+}
+
+[data-theme="lavender-to"] {
+    /* CORES */
+    --blue-primary-bigFont: #4F4162;
+    /* Roxo escuro */
+    --blue-primary: #B5BCB3;
+    /* Cinza esverdeado */
+    --blue-primary-hover: #C179B9;
+    /* Rosa escuro */
+    --orange-primary: #F2BAE3;
+    /* Rosa claro */
+    --color-principal-text: #4F4162;
+    /* Roxo escuro para o texto principal */
+    --gray-elements: rgba(181, 188, 179, 0.2);
+    /* Cinza esverdeado com transparência */
+    --dark-blue: #4F4162;
+    /* Roxo escuro */
+    --dark-blue-elements: #B5BCB3;
+    /* Cinza esverdeado */
+    --purple-primary-bigFont: rgba(241, 186, 227, 1);
+    /* Rosa claro */
+    --purple-elements: #C179B9;
+    /* Rosa escuro */
+    --dark-purple-elements: #4F4162;
+    /* Roxo escuro */
+    --orange-primary-bigFont: rgba(242, 186, 227, 0.48);
+    /* Rosa claro com transparência */
+    --background-interface: #F5E6E8;
+    /* Fundo do tema em rosa claro */
+    --blue-focus: #C179B9;
+    /* Rosa escuro para foco */
+    --card-question-message: rgba(255, 255, 255, 0.9);
+    /* Fundo branco com leve transparência */
+    --gray-border: rgba(181, 188, 179, 0.5);
+    /* Cinza esverdeado com transparência */
+    --blue-white-elements: #FFFFFF;
+    /* Branco */
+
+    /* Novas variáveis necessárias */
+    --sidebar-bg: #B5BCB3;
+    /* Fundo da sidebar em cinza esverdeado */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+    --shadow-medium: rgba(0, 0, 0, 0.12);
+    /* Sombra média */
+    --hover-light: #C179B9;
+    /* Cor de hover em rosa escuro */
+    --text-secondary: #666;
+    /* Texto secundário em cinza */
+    --background-mapa: #4F4162;
+    /* Fundo do mapa em roxo escuro */
 }
 
 

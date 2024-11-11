@@ -1,83 +1,71 @@
 const listaFuncionariosContainer = document.querySelector('.lista-funcionarios');
 
+// Nova função para gerar cards
+function gerarCards(funcionarios, container) {
+    container.innerHTML = "";
+    funcionarios.forEach(funcionario => {
+        const containerFuncionario = document.createElement('section');
+        containerFuncionario.className = 'container-funcionario';
+        
+        containerFuncionario.innerHTML = `
+            <div class="caixa-nome-funcionario">
+                <img src="./imagens/pessoa.png">
+                <p class="nome-funcionario">${funcionario.nome}</p>
+                <p class="cargo-funcionario">${funcionario.area}</p>
+            </div>
+            <div class="caixa-alterar-funcionario">
+                <img src="./imagens/edit.png" class="botao-icone">
+                <img src="./imagens/delete.png" class="botao-icone">
+            </div>
+        `;
+        
+        container.appendChild(containerFuncionario);
+    });
+}
 
-function listarFuncionarios(){
-    listaFuncionariosContainer.innerHTML = ""
+// Função filtrarFuncionarios refatorada
+function filtrarFuncionarios(area) {
+    fetch("../../usuarios/filtrar", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ area: area })
+    })
+    .then(resposta => resposta.json())
+    .then(listaFuncionarios => {
+        gerarCards(listaFuncionarios, listaFuncionariosContainer);
+    });
+}
+
+// Função listarFuncionarios refatorada
+function listarFuncionarios() {
     fetch("../../usuarios/listar", {
         method: "GET",
     })
-        .then(function (resposta) {
-            resposta.json().then(listaFuncionarios => {
-                listaFuncionarios.forEach(funcionario => {
-                    // Obtém o container onde serão inseridos os funcionários
-
-
-                    // Cria a estrutura do funcionário
-                    const containerFuncionario = document.createElement('section');
-                    containerFuncionario.className = 'container-funcionario';
-
-                    // Define o HTML interno com os dados do funcionário
-                    containerFuncionario.innerHTML = `
-                <div class="caixa-nome-funcionario">
-                    <img src="./imagens/pessoa.png">
-                    <p class="nome-funcionario">${funcionario.nome}</p>
-                    <p class="cargo-funcionario">${funcionario.area}</p>
-                </div>
-                <div class="caixa-alterar-funcionario">
-                    <img src="./imagens/edit.png" class="botao-icone">
-                    <img src="./imagens/delete.png" class="botao-icone">
-                </div>
-            `;
-
-                    // Adiciona o novo container à lista
-                    listaFuncionariosContainer.appendChild(containerFuncionario);
-                });
-            });
-        }).catch(error => "Houve um erro de retorno ao listar os funcionarios \n" + error);
+    .then(resposta => resposta.json())
+    .then(listaFuncionarios => {
+        gerarCards(listaFuncionarios, listaFuncionariosContainer);
+    })
+    .catch(error => console.error("Houve um erro de retorno ao listar os funcionarios \n" + error));
 }
 
-listarFuncionarios();
-
-
-
-function buscarFuncionario(char, view){
-    view.innerHTML = ""
+// Função buscarFuncionario refatorada
+function buscarFuncionario(char, view) {
     fetch("../../usuarios/buscar", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-            busca: char
-        })
+        body: JSON.stringify({ busca: char })
     })
-    .then(function (resposta) {
-        resposta.json().then(listaFuncionariosBuscados =>{
-            listaFuncionariosBuscados.forEach(funcionarioBuscado =>{
-                console.log(funcionarioBuscado.nome)
-
-                view.innerHTML = `
-                <div class="caixa-nome-funcionario">
-                    <img src="./imagens/pessoa.png">
-                    <p class="nome-funcionario">${funcionarioBuscado.nome}</p>
-                    <p class="cargo-funcionario">${funcionarioBuscado.area}</p>
-                </div>
-                <div class="caixa-alterar-funcionario">
-                    <img src="./imagens/edit.png" class="botao-icone">
-                    <img src="./imagens/delete.png" class="botao-icone">
-                </div>`
-
-            })
-        })
-    })
-
+    .then(resposta => resposta.json())
+    .then(listaFuncionariosBuscados => {
+        gerarCards(listaFuncionariosBuscados, view);
+    });
 }
 
-
-
-
-
-
+listarFuncionarios();
 
 const btnBuscar = document.getElementById('button_buscar');
 
@@ -88,6 +76,16 @@ btnBuscar.addEventListener('click', ()=>{
 
     if(!searchBar.value || searchBar.value.trim().length === 0){
         listarFuncionarios();
+    }
+})
+
+const buttonAdd = document.getElementById('buttonAdd');
+
+buttonAdd.addEventListener('click', ()=>{
+    if(sessionStorage.getItem){
+        window.location.href = "adicionarFuncionario.html"
+    }else{
+        alert("Você não tem permissão para adicionar um novo funcionario")
     }
 })
 

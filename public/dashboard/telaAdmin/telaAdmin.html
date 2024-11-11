@@ -49,7 +49,7 @@
                 <p>Dashboard</p>
             </div>
 
-            <div class="card-navbar navbar-card-funcionarios" onclick="navigate(1)">
+            <div class="card-navbar navbar-card-funcionarios">
                 <!-- Abaixo a estrutura svg para o icone do funcionarios -->
                 <svg width="18.5" height="18" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="1"
@@ -140,13 +140,13 @@
                 <aside class="caixa-icone-indicador">
                     <img src="./imagens/vendas.png" class="icone-indicador">
                 </aside>
-                <aside class="caixa-texto-indicador texto-vendas">
+                <aside onclick="filtrarFuncionarios('vendas')" class="caixa-texto-indicador texto-vendas">
                     <h3 class="quantidade-funcionarios">12 Funcionários</h3>
                     <p class="setor">Vendas</p>
                 </aside>
             </section>
             <section class="indicador marketing">
-                <aside class="caixa-icone-indicador">
+                <aside onclick="filtrarFuncionarios('marketing')" class="caixa-icone-indicador">
                     <img src="./imagens/marketing.png" class="icone-indicador">
                 </aside>
                 <aside class="caixa-texto-indicador texto-marketing">
@@ -158,12 +158,12 @@
                 <aside class="caixa-icone-indicador">
                     <img src="./imagens/macroGerencia.png" class="icone-indicador">
                 </aside>
-                <aside class="caixa-texto-indicador texto-macroGerencia">
+                <aside onclick="filtrarFuncionarios('macro')" class="caixa-texto-indicador texto-macroGerencia">
                     <h3 class="quantidade-funcionarios">3 Funcionários</h3>
                     <p class="setor">Macro/Gerencia</p>
                 </aside>
             </section>
-            <section class="indicador adicionar">
+            <section class="indicador adicionar" id="buttonAdd">
                 <img src="./imagens/adicionar.png" class="icone-indicador-adicionar">
             </section>
         </div>
@@ -174,9 +174,10 @@
         <div class="lista-funcionarios">
         </div>
     </aside>
+
 </body>
 
 <script src="js/telaAdmin.js"></script>
-<script src="./js/sidebar.js" defer></script>
+<script src="../global/sidebar/sidebar.js" defer></script>
 
 </html>
