@@ -82,7 +82,7 @@ btnBuscar.addEventListener('click', ()=>{
 const buttonAdd = document.getElementById('buttonAdd');
 
 buttonAdd.addEventListener('click', ()=>{
-    if(sessionStorage.getItem){
+    if(sessionStorage.IS_ADM === "true"){
         window.location.href = "adicionarFuncionario.html"
     }else{
         alert("Você não tem permissão para adicionar um novo funcionario")

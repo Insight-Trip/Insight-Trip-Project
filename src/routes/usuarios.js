@@ -3,10 +3,6 @@ var router = express.Router();
 
 var usuarioController = require("../controllers/usuarioController");
 
-router.post("/cadastrar", function (req, res) {
-    usuarioController.cadastrar(req, res);
-})
-
 router.post("/autenticar", function (req, res) {
     usuarioController.autenticar(req, res);
 });
@@ -21,6 +17,10 @@ router.post("/buscar", function(req, res) {
 
 router.get("/listarAdm", function(req, res) {
     usuarioController.listarAdministradores(req, res)
+})
+
+router.post("/cadastrar", function(req, res){
+    usuarioController.cadastrarFuncionario(req, res)
 })
      
 

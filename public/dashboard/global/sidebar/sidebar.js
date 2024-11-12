@@ -51,5 +51,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Iniciar com a sidebar retraída
-    sidebar.classList.add('retracted');
+    // sidebar.classList.add('retracted');
 });

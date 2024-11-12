@@ -1,160 +1,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-/* Particularmente não gostei nenhum pouco desta fonte */
-
 
 :root {
-    /*Fontes*/
+    --primary-color: #EBA868;
+    --secondary-color: #DC7B1F;
+    --background-color: #f5f5f5;
+    --text-color: #333;
     --titulos: 'Bebas Neue', sans-serif;
     --textos: 'Abel', sans-serif;
 }
 
 * {
-    /*Espaçamento*/
-    padding: 0px;
-    margin: 0px;
-    /*Detalhes*/
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--textos);
 }
 
 .container-content {
-    /*Tamanho*/
-    width: 100vw;
-    height: 100vh;
-    /*Organização de elementos filhos*/
-    display: flex;
-    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.container-cadastro {
-    /*Tamanho*/
-    width: 55%;
-    height: 100%;
-    /*Organização de elementos filhos*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.caixa-cadastro {
-    /*Tamanho*/
-    width: 70%;
-    height: 80%;
-    /*Organização de elementos filhos*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /*Detalhes*/
-    overflow: visible;
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .logo {
-    /*Tamanho*/
-    width: 45%;
+    width: 200px;
+    margin-bottom: 1rem;
 }
 
-p {
+h1 {
     font-family: var(--titulos);
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
 }
 
-.caixa-inputs {
-    /*Tamanho*/
-    width: 100%;
-    height: 50%;
-    /*Organização de elementos filhos*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /*Detalhes*/
-    overflow: visible;
-    gap: 10px;
+h2 {
+    font-family: var(--titulos);
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.container-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 .input {
-    /*Tamanho*/
-    height: 15%;
-    /*Espaçamento*/
-    padding-left: 7px;
-    /*Borda*/
-    border: 2px solid #EBA868;
-    border-radius: 10px;
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
 }
 
-.caixa-botao {
-    /*Tamanho*/
-    width: 100%;
-    height: 20%;
-    /*Organização de elementos filhos*/
+.input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+select.input {
+    cursor: pointer;
+}
+
+.actions {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 7px;
-    margin-top: 7px;
-    /*Cor*/
-    color: #EBA868;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.botao-cadastrar, .btn-voltar, .botao-finalizar {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--titulos);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .botao-cadastrar {
-    /*Tamanho*/
-    width: 100%;
-    height: 35%;
-    /*Borda*/
-    border: none;
-    border-radius: 10px;
-    /*Cor*/
-    background-color: #EBA868;
-    color: #fff;
-    /*Detalhes*/
-    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
 }
 
-.link-login {
-    /*Texto*/
-    text-decoration: underline;
-    color: #DC7B1F;
-    /*Detalhes*/
-    cursor: pointer;
+.btn-voltar {
+    background-color: #ddd;
+    color: var(--text-color);
 }
 
-.container-foto {
-    /*Tamanho*/
-    width: 45%;
-    height: 100%;
-    /*Detalhes*/
-    background-image: url("../../../siteInstitucional/imagens/imagemCadastro.png");
-    background-size: 100%;
+.botao-cadastrar:hover, .btn-voltar:hover, .botao-finalizar:hover {
+    transform: translateY(-2px);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .container-content {
-        /*Organização de elementos filhos*/
-        display: block;
+        padding: 1rem;
     }
 
-    .container-cadastro {
-        /*Tamanho*/
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .botao-cadastrar, .btn-voltar {
         width: 100%;
-    }
-
-    .caixa-cadastro {
-        /*Tamanho*/
-        width: 90%;
-        height: 80%;
-    }
-
-    .logo {
-        /*Tamanho*/
-        width: 60%;
-    }
-
-    .caixa-botao {
-        /*Organização de elementos filhos*/
-        gap: 10px;
-    }
-
-    .container-foto {
-        /*Comportamento*/
-        display: none;
     }
 }

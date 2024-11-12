@@ -3,40 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insight Trip | Adicionar Funcionario</title>
+    <title>Insight Trip | Adicionar Funcionário</title>
     <link rel="icon" href="../../siteInstitucional/imagens/logo/imagemLogoPascoa.png">
     <link rel="stylesheet" href="./css/adicionarFuncionario.css">
 </head>
 <body>
     <div class="container-content">
-        <aside class="container-cadastro">
-            <section class="caixa-cadastro">
-                <img src="../../siteInstitucional/imagens/logo/imagemLogoMontanha.png" alt="logo" class="logo">
-                <div class="caixa-inputs">
-                    <input type="text" class="input" id="input_nome" placeholder="Nome">
+        <div class="header">
+            <img src="../../siteInstitucional/imagens/logo/imagemLogoMontanha.png" alt="logo" class="logo">
+            <h1>Cadastro de Novo Funcionário</h1>
+        </div>
+        
+        <div class="container-form">
+            <div class="form-section dados-pessoais">
+                <h2>Dados Pessoais</h2>
+                <div class="input-group">
+                    <input type="text" class="input" id="input_nome" placeholder="Nome Completo">
                     <input type="text" class="input" id="input_cpf" placeholder="CPF">
-                    <input type="text" class="input" id="input_email" placeholder="Email">
-                    <input type="password" class="input" id="input_senha" placeholder="Senha">
                     <input type="tel" class="input" id="input_telefone" placeholder="Telefone">
-                    <select class="input" id="select_admin">
-                        <option value="" disabled selected>Selecione o Administrador</option>
-                    </select>
+                </div>
+            </div>
+
+            <div class="form-section dados-acesso">
+                <h2>Dados de Acesso</h2>
+                <div class="input-group">
+                    <input type="text" class="input" id="input_email" placeholder="Email Corporativo">
+                    <input type="password" class="input" id="input_senha" placeholder="Senha Provisória">
+                </div>
+            </div>
+
+            <div class="form-section dados-empresa">
+                <h2>Dados Empresariais</h2>
+                <div class="input-group">
                     <select class="input" id="select_area">
-                        <option value="" disabled selected>Selecione a Área</option>
-                        <option value="macro">Macro</option>
-                        <option value="vendas">Vendas</option>
-                        <option value="marketing">Marketing</option>
+                        <option value="" disabled selected>Área de Atuação</option>
+                        <option value=1>Macro</option>
+                        <option value=2>Vendas</option>
+                        <option value=3>Marketing</option>
+                    </select>
+                    <select class="input" id="select_admin">
+                        <option value="" disabled selected>Gestor Responsável</option>
                     </select>
                 </div>
-                <div class="caixa-botao">
-                    <button class="botao-cadastrar">CADASTRAR</button>
-                    <p>Já tem conta? <a href="./login.html"><strong class="link-login">Entrar</strong></a></p>
-                </div>
-            </section>
-        </aside>
-        <aside class="container-foto"></aside>
+            </div>
+
+            <div class="actions">
+                <button class="btn-voltar" onclick="window.location.href='telaAdmin.html'">Voltar</button>
+                <button class="botao-cadastrar" id="cadButton">Registrar Funcionário</button>
+                <button class="botao-finalizar" id="finishButton">Registros Finalizados</button>
+            </div>
+        </div>
     </div>
-    
 </body>
 
 <script src="./js/adicionarFuncionario.js"></script>
