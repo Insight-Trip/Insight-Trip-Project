@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     case 'ia':
                         window.location.href = '../dummont/dummont.html';
                         break;
-                    case 'config':
-                        window.location.href = '/pagina-configuracoes';
-                        break;
                     case 'buscar-destinos':
                         window.location.href = '../telaProcura/telaProcura.html';
+                        break;
+                    case 'dashboard':
+                        window.location.href = "../dashboard/dashboard.html";
                         break;
                     default:
                         console.log('Página não encontrada');

@@ -49,3 +49,16 @@ detectionColor();
 // if (document.documentElement.getAttribute("data-theme") === "light") {
 //     toggleSwitch.checked = true;
 // }
+
+
+
+//Abaixo se encontra a função para injeção de parametros na url para seleção da dashboard correta
+
+
+
+
+
+
+// constructUrlDashboard(parametrosTeste)
+
+
