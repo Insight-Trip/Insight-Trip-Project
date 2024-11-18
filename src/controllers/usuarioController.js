@@ -109,11 +109,39 @@ function listarAdministradores(req, res){
     })
 }
 
+function atualizarFuncionario(req, res) {
+    const { id } = req.params;
+    const { nome, cpf, email, senha, telefone, fkAdministrador, fkArea } = req.body;
+
+    usuarioModel.atualizarFuncionario(id, nome, cpf, email, senha, telefone, fkAdministrador, fkArea)
+        .then(resultado => {
+            res.status(200).json({ message: "Funcionário atualizado com sucesso!", resultado });
+        })
+        .catch(erro => {
+            console.error(erro);
+            res.status(500).json({ message: "Erro ao atualizar o funcionário.", erro });
+        });
+}
+
+function deletarFuncionario(req, res) {
+    const { id } = req.params;
+
+    usuarioModel.deletarFuncionario(id)
+        .then(resultado => {
+            res.status(200).json({ message: "Funcionário deletado com sucesso!", resultado });
+        })
+        .catch(erro => {
+            console.error(erro);
+            res.status(500).json({ message: "Erro ao deletar o funcionário.", erro });
+        });
+}
 
 module.exports = {
     autenticar,
     listarFuncionarios,
     buscarFuncionario,
     listarAdministradores,
-    cadastrarFuncionario
+    cadastrarFuncionario,
+    atualizarFuncionario,
+    deletarFuncionario
 }

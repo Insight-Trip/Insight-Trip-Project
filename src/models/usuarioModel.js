@@ -63,11 +63,37 @@ function listarAdministradores(){
     return database.executar(instrucaoSql)
 }
 
+function atualizarFuncionario(idFuncionario, nome, cpf, email, senha, telefone, fkAdministrador, fkArea) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Atualizando funcionário: ", idFuncionario, nome, email, telefone, fkArea);
+
+    let senha = senha ? `senha = MD5('${senha}')` : "";
+
+    var instrucaoSql = `
+        UPDATE Funcionario 
+        SET nome = '${nome}', cpf = '${cpf}', email = '${email}', ${senhaSql} telefone = '${telefone}', fkAdministrador = ${fkAdministrador}, fkArea = ${fkArea}
+        WHERE idFuncionario = ${idFuncionario};
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucaoSql);
+    return database.executar(instrucaoSql);
+}
+
+function deletarFuncionario(idFuncionario) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Deletando funcionário: ", idFuncionario);
+
+    var instrucaoSql = `
+        DELETE FROM Funcionario WHERE idFuncionario = ${idFuncionario};
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucaoSql);
+    return database.executar(instrucaoSql);
+}
+
 module.exports = {
     autenticar,
     cadastrarAdm,
     cadastrarFuncionario,
     listarFuncionarios,
     buscarFuncionario,
-    listarAdministradores
+    listarAdministradores,
+    atualizarFuncionario,
+    deletarFuncionario,
 };

@@ -22,6 +22,13 @@ router.get("/listarAdm", function(req, res) {
 router.post("/cadastrar", function(req, res){
     usuarioController.cadastrarFuncionario(req, res)
 })
-     
+   
+router.post("/atualizar", function(req, res){
+    usuarioController.atualizarFuncionario(req, res)
+})
+
+router.post("/deletar", function(req, res){
+    usuarioController.deletarFuncionario(req, res)
+})
 
 module.exports = router;
