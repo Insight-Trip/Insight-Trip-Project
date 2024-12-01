@@ -241,3 +241,75 @@
     position: absolute;
 }
 
+.folder-structure {
+    display: flex;
+    align-items: center;
+    width: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.folder-carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+    overflow: auto;
+    height: 100%;
+}
+
+.folder {
+    flex: 0 0 auto;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    min-width: 60px; /* Largura mínima para as siglas */
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+.folder:hover {
+    background-color: #e0e0e0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.carousel-button:hover {
+    background: #f0f0f0;
+}
+
+.carousel-button.prev {
+    left: 5px;
+}
+
+.carousel-button.next {
+    right: 5px;
+}
+
+.folder.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Garante que o container pai não tenha overflow */
+.tela {
+    overflow-x: hidden;
+    width: 100%;
+}
+

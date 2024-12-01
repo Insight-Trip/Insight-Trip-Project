@@ -147,18 +147,36 @@
         </div>
 
         <div class="folder-structure">
-            <a class="folder selected" href="/public/dashboard/dashboard/dashboard.html">Brasil</a>
-            <a class="folder" href="../dashboardEstadoGerente/dashboardSP.html">São Paulo</a>
-            <a class="folder" href="../dashboardEstadoGerente/dashboardRJ.html">Rio de Janeiro</a>
-            <a class="folder" href="../dashboardEstadoGerente/dashboardMG.html">Minas Gerais</a>
-            <a class="folder" href="../dashboardEstadoGerente/dashboardES.html">Espirito Santo</a>
-            <a class="folder" href="../dashboardEstadoGerente/dashboardPR.html">Parana</a>
-            <a class="folder" href="../dashboardEstadoGerente/dashboardSC.html">Santa Catarina</a>
-            <a class="folder" href="../dashboardEstadoGerente/dashboardRS.html">Rio Grande do Sul</a>
-            <a class="folder" href="../dashboardEstadoGerente/dashboardAM.html">Amazonas</a>
-            <a class="folder" href="/public/dashboard/dashboardEstadoGerente/dashboardTO.html">Tocantins</a>
-            <a class="folder" href="../dashboardEstadoGerente/dashboardTO.html">Amapá</a>
-            <a class="folder" href="../dashboardEstadoGerente/dashboardAM.html">Acre</a>
+            <div class="folder-carousel">
+                <a class="folder" onclick="construirParametros(undefined)">Brasil</a>
+                <a class="folder" onclick="construirParametros('11')">RO</a>
+                <a class="folder" onclick="construirParametros('12')">AC</a>
+                <a class="folder" onclick="construirParametros('13')">AM</a>
+                <a class="folder" onclick="construirParametros('14')">RR</a>
+                <a class="folder" onclick="construirParametros('15')">PA</a>
+                <a class="folder" onclick="construirParametros('16')">AP</a>
+                <a class="folder" onclick="construirParametros('17')">TO</a>
+                <a class="folder" onclick="construirParametros('21')">MA</a>
+                <a class="folder" onclick="construirParametros('22')">PI</a>
+                <a class="folder" onclick="construirParametros('23')">CE</a>
+                <a class="folder" onclick="construirParametros('24')">RN</a>
+                <a class="folder" onclick="construirParametros('25')">PB</a>
+                <a class="folder" onclick="construirParametros('26')">PE</a>
+                <a class="folder" onclick="construirParametros('27')">AL</a>
+                <a class="folder" onclick="construirParametros('28')">SE</a>
+                <a class="folder" onclick="construirParametros('29')">BA</a>
+                <a class="folder" onclick="construirParametros('31')">MG</a>
+                <a class="folder" onclick="construirParametros('32')">ES</a>
+                <a class="folder" onclick="construirParametros('33')">RJ</a>
+                <a class="folder" onclick="construirParametros('35')">SP</a>
+                <a class="folder" onclick="construirParametros('41')">PR</a>
+                <a class="folder" onclick="construirParametros('42')">SC</a>
+                <a class="folder" onclick="construirParametros('43')">RS</a>
+                <a class="folder" onclick="construirParametros('50')">MS</a>
+                <a class="folder" onclick="construirParametros('51')">MT</a>
+                <a class="folder" onclick="construirParametros('52')">GO</a>
+                <a class="folder" onclick="construirParametros('53')">DF</a>
+            </div>
         </div>
 
         <div class="graficos">
@@ -268,16 +286,20 @@
                     <div class="filter-field">
                         <label for="periodo-climatico">Período Climático:</label>
                         <select id="periodo-climatico">
-                            <option value="proximo-semestre">Próximo semestre</option>
-                            <option value="proximos-2-anos">Próximos 2 anos</option>
+                            <option value="verao">Verão</option>
+                            <option value="outono">Outono</option>
+                            <option value="inverno">Inverno</option>
+                            <option value="Primvera">Primavera</option>
                         </select>
                     </div>
                 
                     <div class="filter-field">
                         <label for="eventos-sazonais">Eventos Sazonais:</label>
                         <select id="eventos-sazonais">
-                            <option value="proximo-semestre">Próximo semestre</option>
-                            <option value="proximos-2-anos">Próximos 2 anos</option>
+                            <option value="carnaval">Carnaval</option>
+                            <option value="natal">Natal</option>
+                            <option value="saojoao">São João</option>
+                            <option value="pascoa">Páscoa</option>
                         </select>
                     </div>
                 

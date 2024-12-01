@@ -37,39 +37,31 @@ CREATE TABLE UF (
     Regiao VARCHAR(45)
 );
 
-CREATE TABLE Clima (
-	idClima INT PRIMARY KEY AUTO_INCREMENT,
-	EstacaoAno VARCHAR(45),
-    DtInicio DATE,
-    DtFim DATE
-);
-
-CREATE TABLE Criminalidade (
-    idCriminalidade INT PRIMARY KEY AUTO_INCREMENT,
-    NomeCrime VARCHAR(45),
-    DtCrime DATE,
-    QtdVitimas INT,
+CREATE TABLE Crime (
+    idCrime INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(45),
+    qtdOcorrencia INT,
+    Data DATE,
     fkEstado INT,
     CONSTRAINT fkEstadoCriminalidade FOREIGN KEY (fkEstado) 
         REFERENCES UF(CodigoIBGE) 
 );
 
-CREATE TABLE Eventos (
-    idEventos INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE Evento (
+    idEvento INT PRIMARY KEY AUTO_INCREMENT,
     Nome VARCHAR(45),
-    Descricao VARCHAR(45)
+    DataInicio DATE,
+    DataFim DATE
 );
 
-CREATE TABLE EstadoHasEventos (
+CREATE TABLE EstadoHasEvento (
     idEventoEstado INT PRIMARY KEY AUTO_INCREMENT,
-    dtEventoInicio DATE,
-    dtEventoTermino DATE,
     fkEstado INT,
     CONSTRAINT fkEstadoEventos FOREIGN KEY (fkEstado) 
         REFERENCES UF(CodigoIBGE),
-    fkEventos INT,
-    CONSTRAINT fkEventosEstado FOREIGN KEY (fkEventos) 
-        REFERENCES Eventos(idEventos)
+    fkEvento INT,
+    CONSTRAINT fkEventosEstado FOREIGN KEY (fkEvento) 
+        REFERENCES Evento(idEvento)
 );
 
 CREATE TABLE Aeroporto (
@@ -97,5 +89,5 @@ CREATE TABLE Viagem (
 );
 
 INSERT INTO Funcionario VALUES
-(default, 'Admin', null, 'Admin', 'Admin', null, null, null),
-(default, 'Usuário Teste', '12345678910', 'teste@email.com', 'teste123', '11 912345678', 'Marketing', null);
+(default, 'Admin', null, 'Admin', md5('Admin'), null, null, null),
+(default, 'Usuário Teste', '12345678910', 'teste@email.com', md5('teste123'), '11 912345678', 'Marketing', null);
